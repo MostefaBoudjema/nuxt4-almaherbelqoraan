@@ -54,14 +54,14 @@ export default defineNuxtConfig({
             link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
             script: [
                 {
-                    src: 'https://www.googletagmanager.com/gtag/js?id=G-L5HVZ2VCP7',
+                    src: 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX',
                     async: true,
                 },
                 {
                     innerHTML: `window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
-gtag('config', 'G-L5HVZ2VCP7');`,
+gtag('config', 'G-XXXXXXXXXX');`,
                     type: 'text/javascript',
                 },
             ],

@@ -2,14 +2,12 @@
 import { ref, onMounted, onUpdated } from 'vue';
 import { useI18n } from 'vue-i18n';
 import feather from "feather-icons";
-import { socialLinks } from "@/data/socialLinks";
 
-const { t } = useI18n({
+const { t }=useI18n({
     inheritLocale: true,
     useScope: "local",
 });
 
-const socials = ref(socialLinks);
 
 onMounted(() => {
     feather.replace();
@@ -22,36 +20,18 @@ onUpdated(() => {
 
 <template>
     <div class="container mx-auto">
-        <div
-            class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark"
-        >
+        <div class="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
             <!-- Footer social links -->
-            <div
-                class="flex flex-col justify-center items-center mb-12 sm:mb-20"
-            >
-                <p
-                    class="font-general-semibold text-3xl sm:text-4xl font-semibold text-primary-dark dark:text-primary-light mb-8 sm:mb-12"
-                >
-                    {{ t("Contact me") }}
-                </p>
-                <ul class="flex gap-2 sm:gap-10">
-                    <a
-                        v-for="social in socials"
-                        :key="social.id"
-                        :href="social.url"
-                        target="__blank"
-                        class="text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4 duration-500"
-                    >
-                        <i
-                            :data-feather="social.icon"
-                            class="w-5 sm:w-8 h-5 sm:h-8"
-                        ></i>
-                    </a>
-                </ul>
+            <div class="flex flex-col justify-center items-center mb-12 sm:mb-20">
+
             </div>
 
             <!-- Footer copyright -->
-            <!-- <FooterCopyright /> -->
+            <div class="container copyright text-center mt-4 ">
+                <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">Mostefa B</strong> <span>All Rights
+                        Reserved</span>
+                </p>
+            </div>
         </div>
     </div>
 </template>
