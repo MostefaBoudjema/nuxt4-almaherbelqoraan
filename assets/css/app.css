@@ -1,0 +1,20 @@
+/*== 
+ * Vue.js & TailwindCSS Portfolio Main CSS File
+ * Powered by: @realMostfa
+*/
+@import './custom.css';
+@import './fonts.css';
+
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+@import "aos/dist/aos.css";
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+
+
+
