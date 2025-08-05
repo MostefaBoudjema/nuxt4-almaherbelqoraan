@@ -42,9 +42,9 @@ import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 const slides=[
-    { image: '/images/carousel/carousel-1.jpg' },
-    { image: '/images/carousel/carousel-2.jpg' },
-    { image: '/images/carousel/carousel-3.jpg' }
+    { image: '/images/carousel/carousel-1.webp' },
+    { image: '/images/carousel/carousel-2.webp' },
+    { image: '/images/carousel/carousel-3.webp' }
 ]
 
 </script>
