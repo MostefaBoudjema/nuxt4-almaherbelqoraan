@@ -13,6 +13,7 @@ const { t }=useI18n({
 
         <p class="text-xs sm:text-sm text-center px-2">
             <span>
+                {{ t('footer.rights') }}
                 <a href="https://mostefa-boudjema.vercel.app" class="text-primary font-semibold px-1" target="_blank"
                     rel="noopener">
                     {{ t('footer.name') }}
