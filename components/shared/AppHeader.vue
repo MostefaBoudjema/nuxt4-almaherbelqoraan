@@ -103,7 +103,7 @@ try {
                 </div>
             </div>
 
-            <AppHeaderLinks :showModal="showModal" :isOpen="isOpen" @close-menu="isOpen = false" />
+            <!-- <AppHeaderLinks :showModal="showModal" :isOpen="isOpen" @close-menu="isOpen = false" /> -->
 
             <div class="hidden sm:flex justify-between items-center flex-col md:flex-row">
                 <language-switcher

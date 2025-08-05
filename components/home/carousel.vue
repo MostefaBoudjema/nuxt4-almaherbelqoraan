@@ -5,13 +5,13 @@
             :speed="1200" :navigation="true" class="h-[100vh]">
             <SwiperSlide v-for="(slide, index) in slides" :key="index">
                 <div class="relative h-full">
-                    <img :src="slide.image" class="w-full h-full object-cover" />
+                    <img :src="slide.image" alt="carousel{{ index + 1 }}" class="w-full h-full object-cover" />
                     <div class="absolute inset-0 bg-[rgba(24,29,56,0.7)] flex items-center">
                         <div class="container mx-auto px-4">
                             <div class="max-w-2xl text-right rtl">
-                                <h5 class="text-primary uppercase mb-3 text-2xl font-semibold font-quran">
+                                <h2 class="text-primary uppercase mb-3 text-2xl font-semibold font-quran">
                                     {{ $t(`carousel.slide${index + 1}.subtitle`) }}
-                                </h5>
+                                </h2>
                                 <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-body">
                                     {{ $t(`carousel.slide${index + 1}.title`) }}
                                 </h1>

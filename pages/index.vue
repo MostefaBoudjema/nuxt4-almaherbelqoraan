@@ -23,6 +23,9 @@ const { t }=useI18n({
 });
 useHead({
   title: () => `${t('Home')} - ${t('website_name')}`,
+  htmlAttrs: {
+    lang: 'ar',
+  },
   meta: [
     {
       name: 'description',
