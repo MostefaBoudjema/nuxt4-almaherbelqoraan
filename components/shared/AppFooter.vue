@@ -9,7 +9,7 @@ const { t }=useI18n({
 </script>
 
 <template>
-    <div class="flex items-center justify-center h-12 text-dark-500 bg-inherit">
+    <div class="flex items-center justify-center h-8 text-gray-100 bg-gray-800">
 
         <p class="text-xs sm:text-sm text-center px-2">
             <span>
