@@ -87,7 +87,7 @@ try {
                         @lang-changed="updateLang"
                         class="block sm:hidden bg-ternary-light dark:bg-ternary-dark hover:bg-hover-light dark:hover:bg-hover-dark hover:shadow-sm px-2.5 py-2 rounded-lg"
                     />
-                    <div class="sm:hidden">
+                    <!-- <div class="sm:hidden">
                         <button @click="isOpen = !isOpen" type="button" class="focus:outline-none" aria-label="Hamburger Menu">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 class="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light">
@@ -99,7 +99,7 @@ try {
                                 </path>
                             </svg>
                         </button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
