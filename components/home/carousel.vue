@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full mb-12">
+    <div class="w-full">
         <Swiper :modules="[Autoplay, Navigation, Pagination]" :autoplay="{ delay: 5000, disableOnInteraction: false }"
             :loop="true" :pagination="{ clickable: true }" :navigation="true" class="h-[100vh]">
             <SwiperSlide v-for="(slide, index) in slides" :key="index">
@@ -17,14 +17,14 @@
                                 <p class="text-white text-base md:text-lg mb-6">
                                     {{ $t(`carousel.slide${index + 1}.description`) }}
                                 </p>
-                                <div class="flex flex-wrap gap-4 justify-start">
+                                <!-- <div class="flex flex-wrap gap-4 justify-start">
                                     <a href="#" class="btn-primary">
                                         {{ $t('carousel.buttons.read_more') }}
                                     </a>
                                     <a href="#" class="btn-light">
                                         {{ $t('carousel.buttons.join_now') }}
                                     </a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
