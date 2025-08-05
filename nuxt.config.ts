@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: [
+        '@nuxtjs/google-fonts',
         '@nuxtjs/tailwindcss',
         '@nuxt/image',
         [
@@ -24,6 +25,14 @@ export default defineNuxtConfig({
             },
         ],
     ],
+    googleFonts: {
+        display: 'swap',
+        families: {
+            Amiri: true,
+            Lateef: true,
+            Cairo: [300, 400, 600],
+        },
+    },
     css: ['~/assets/css/app.css'],
     plugins: [
         '@/plugins/aos.client.js',
@@ -43,15 +52,18 @@ export default defineNuxtConfig({
         public: {
             i18nLocale: process.env.I18N_LOCALE || 'ar',
             i18nFallbackLocale: process.env.I18N_FALLBACK_LOCALE || 'ar',
-            authorName: process.env.AUTHOR_NAME || 'Djebiha Amina',
-            showMultiLang:false,
+            authorName: process.env.AUTHOR_NAME || 'Boudjema Mostefa',
+            showMultiLang: false,
             whatsappNumber: process.env.WHATSAPP_NUMBER || '213672358792',
         },
     },
+
     app: {
         head: {
             title: 'الماهر بالقران | Almaher Belqoraan',
-            link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+            link: [
+                { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+            ],
             script: [
                 {
                     src: 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX',

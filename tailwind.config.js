@@ -15,7 +15,10 @@ module.exports={
 	theme: {
 		extend: {
 			fontFamily: {
-				poppins: ['Poppins', 'sans-serif'],
+				// poppins: ['Poppins', 'sans-serif'],
+				quran: ['Amiri', 'serif'],
+				body: ['Lateef', 'cursive'],
+				ui: ['Cairo', 'sans-serif'],
 			},
 			colors: {
 				'primary-light': '#F7F8FC',

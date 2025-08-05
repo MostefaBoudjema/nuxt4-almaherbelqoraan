@@ -8,23 +8,23 @@
                     <div class="absolute inset-0 bg-[rgba(24,29,56,0.7)] flex items-center">
                         <div class="container mx-auto px-4">
                             <div class="max-w-2xl text-right rtl">
-                                <h5 class="text-primary uppercase mb-3 text-lg font-semibold">
+                                <h5 class="text-primary uppercase mb-3 text-lg font-semibold font-quran">
                                     {{ $t(`carousel.slide${index + 1}.subtitle`) }}
                                 </h5>
-                                <h1 class="text-white text-4xl md:text-5xl font-bold mb-4">
+                                <h1 class="text-white text-4xl md:text-5xl font-bold mb-4 font-body">
                                     {{ $t(`carousel.slide${index + 1}.title`) }}
                                 </h1>
-                                <p class="text-white text-base md:text-lg mb-6">
+                                <p class="text-white text-base md:text-lg mb-6 font-ui">
                                     {{ $t(`carousel.slide${index + 1}.description`) }}
                                 </p>
-                                <!-- <div class="flex flex-wrap gap-4 justify-start">
+                                <div v-if="false" class="flex flex-wrap gap-4 justify-start">
                                     <a href="#" class="btn-primary">
                                         {{ $t('carousel.buttons.read_more') }}
                                     </a>
                                     <a href="#" class="btn-light">
                                         {{ $t('carousel.buttons.join_now') }}
                                     </a>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
