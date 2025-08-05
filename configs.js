@@ -10,7 +10,7 @@ const configs = {
   logo_light: logoLight,
   page_404: page404,
   whatsapp: whatsapp,
-  whatsappNumber: import.meta.env.VITE_WHATSAPP_NUMBER || "213793692289",
+  whatsappNumber: import.meta.env.VITE_WHATSAPP_NUMBER || "213672358792",
 }
 
 export default configs;
