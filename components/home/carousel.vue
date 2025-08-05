@@ -1,7 +1,8 @@
 <template>
     <div class="w-full">
         <Swiper :modules="[Autoplay, Navigation, Pagination]" :autoplay="{ delay: 5000, disableOnInteraction: false }"
-            :loop="true" :pagination="{ clickable: true }" :navigation="true" class="h-[100vh]">
+            :loop="true" :pagination="{ clickable: true }"
+            :speed="1200" :navigation="true" class="h-[100vh]">
             <SwiperSlide v-for="(slide, index) in slides" :key="index">
                 <div class="relative h-full">
                     <img :src="slide.image" class="w-full h-full object-cover" />
