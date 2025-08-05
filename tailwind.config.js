@@ -19,6 +19,7 @@ module.exports={
 				quran: ['Amiri', 'serif'],
 				body: ['Lateef', 'cursive'],
 				ui: ['Cairo', 'sans-serif'],
+				hacen: ['Hacen Algeria Bd', 'sans-serif'],
 			},
 			colors: {
 				'primary-light': '#F7F8FC',

@@ -432,3 +432,10 @@
     padding-right: 0;
     border-right: none;
 }
+
+@font-face {
+  font-family: 'Hacen Algeria Bd';
+  src: url('/fonts/HacenAlgeriaBd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
