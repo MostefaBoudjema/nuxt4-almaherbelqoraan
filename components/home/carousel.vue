@@ -1,8 +1,8 @@
 <template>
     <div class="w-full">
-        <Swiper :modules="[Autoplay, Navigation, Pagination]" :autoplay="{ delay: 5000, disableOnInteraction: false }"
-            :loop="true" :pagination="{ clickable: true }"
-            :speed="1200" :navigation="true" class="h-[100vh]">
+        <Swiper :modules="[Autoplay]" :autoplay="{ delay: 5000, disableOnInteraction: false }"
+            :loop="true" 
+            :speed="1200" class="h-[100vh]">
             <SwiperSlide v-for="(slide, index) in slides" :key="index">
                 <div class="relative h-full">
                     <img :src="slide.image" alt="carousel{{ index + 1 }}" class="w-full h-full object-cover" />
@@ -38,10 +38,8 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { Autoplay, Pagination } from 'swiper/modules'
 const slides=[
     { image: '/images/carousel/carousel-1.webp' },
     { image: '/images/carousel/carousel-2.webp' },
