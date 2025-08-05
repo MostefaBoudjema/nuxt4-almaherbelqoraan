@@ -1,4 +1,4 @@
-import logoDark from '/images/logo-dark.svg';
+import logoDark from '/images/logo-light.svg';
 import logoLight from '/images/logo-light.svg';
 import page404 from '/images/404-page.png';
 import whatsapp from '/images/whatsapp2.svg';

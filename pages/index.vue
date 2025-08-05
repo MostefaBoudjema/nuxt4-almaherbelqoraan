@@ -1,14 +1,15 @@
 <template>
-  <div class="p-8">
+  <div class="">
 
     <!-- Banner -->
-    <AppBanner class="mb-5 sm:mb-8 mt-8" />
-
+    <!-- <AppBanner class="p-8 mb-5 sm:mb-8 mt-8" /> -->
+    <carousel />
   </div>
 </template>
 
 <script setup>
 import AppBanner from '@/components/shared/AppBanner';
+import Carousel from '@/components/home/carousel';
 
 import { useI18n } from 'vue-i18n';
 import { useHead } from '#imports'
@@ -16,12 +17,21 @@ import { useHead } from '#imports'
 
 // const localePath = useLocalePath();
 
-const { t } = useI18n({
-    inheritLocale: true,
-    useScope: "global",
+const { t }=useI18n({
+  inheritLocale: true,
+  useScope: "global",
 });
 useHead({
-  title: () => `${t('Home')} - ${t('website_name')}`
+  title: () => `${t('Home')} - ${t('website_name')}`,
+  meta: [
+    { name: 'description', content: '' },
+    { name: 'keywords', content: '' }
+  ],
+
+ 
+  script: [
+    { src: '/js/main.js', body: true }
+  ]
 })
 </script>
 
