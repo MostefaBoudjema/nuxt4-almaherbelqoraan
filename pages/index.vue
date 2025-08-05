@@ -24,11 +24,15 @@ const { t }=useI18n({
 useHead({
   title: () => `${t('Home')} - ${t('website_name')}`,
   meta: [
-    { name: 'description', content: '' },
-    { name: 'keywords', content: '' }
+    {
+      name: 'description',
+      content: t('meta.description')
+    },
+    {
+      name: 'keywords',
+      content: t('meta.keywords')
+    }
   ],
-
- 
   script: [
     { src: '/js/main.js', body: true }
   ]
